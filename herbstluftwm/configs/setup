@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Function to make commands less annoying
+hc() {
+    herbstclient "$@"
+}
+
+# monitor bs
+xrandr --output eDP-1 --primary --mode 1920x1080 --pos 760x1440 --rotate normal --output HDMI-1 --off --output DP-1 --mode 3440x1440 --rate 120 --pos 0x0 --rotate normal --output HDMI-2 --off
+
+hc detect_monitors
+
+# polybar
+# $HOME/.config/polybar/launch.sh --main
+# if ! pgrep polybar; then
+#     $HOME/.config/polybar/launch.sh
+# fi
+
+# compton
+if ! pgrep picom; then
+    picom -b
+fi
+
+
+hc emit_hook reload
+
+xsetroot -solid '#0f0f0f'
+feh --bg-fill ~/Wall/Rainbow\ 5K\ P3.jpg
+
+# rules
+hc unrule -F
+#hc rule class=XTerm tag=3 # move all xterms to tag 3
+hc rule focus=on # normally focus new clients
+hc rule floatplacement=smart
+#hc rule focus=off # normally do not focus new clients
+# give focus to most common terminals
+#hc rule class~'(.*[Rr]xvt.*|.*[Tt]erm|Konsole)' focus=on
+hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' floating=on
+hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
+hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
+
+hc set tree_style '╾│ ├└╼─┐'
+
+# unlock, just to be sure
+hc unlock

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DIR="$HOME/.config/polybar"
+
+kill_bar() {
+	# Terminate already running bar instances
+	killall -q polybar
+
+	# Wait until the processes have been shut down
+	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+}
+
+kill_bar
+polybar -q tray -c $DIR/main.ini &
+polybar -q media -c $DIR/main.ini &
+polybar -q apps -c $DIR/main.ini &

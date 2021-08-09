@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Function to make commands less annoying
+hc() {
+    herbstclient "$@"
+}
+
+hc attr theme.tiling.reset 1
+hc attr theme.floating.reset 1
+hc set frame_border_active_color '#3b4252'
+hc set frame_border_normal_color '#191919'
+hc set frame_bg_normal_color '#3b4252'
+hc set frame_bg_active_color '#87c0d0'
+hc set frame_border_width 0
+hc set always_show_frame off
+hc set frame_bg_transparent on
+hc set frame_active_opacity 50
+hc set frame_normal_opacity 0
+hc set frame_transparent_width 9999
+hc set frame_gap 12
+
+hc attr theme.title_height 0
+hc attr theme.padding_top 0 
+hc attr theme.active.color '#87c0d0'
+hc attr theme.normal.color '#3b4252'
+hc attr theme.urgent.color '#ac8a8c'
+hc attr theme.inner_width 0
+hc attr theme.inner_color black
+hc attr theme.border_width 1
+hc attr theme.floating.border_width 1
+hc attr theme.floating.padding_top 0
+hc attr theme.floating.outer_width 0
+hc attr theme.floating.outer_color "#3b4252"
+hc attr theme.active.inner_color '#3b4252'
+hc attr theme.active.outer_color '#3b4252'
+hc attr theme.background_color '#3b4252'
+
+hc set window_gap 5
+hc set frame_padding -5
+hc set smart_window_surroundings off
+hc set smart_frame_surroundings off
+hc set mouse_recenter_gap 0
