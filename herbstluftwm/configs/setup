@@ -21,6 +21,10 @@ if ! pgrep picom; then
     picom -b
 fi
 
+# polybar
+if [[ -f ~/.config/polybar/launch ]]; then
+    ~/.config/polybar/launch
+fi
 
 hc emit_hook reload
 
