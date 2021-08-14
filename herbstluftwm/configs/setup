@@ -6,7 +6,8 @@ hc() {
 }
 
 # monitor bs
-xrandr --output eDP-1 --primary --mode 1920x1080 --pos 760x1440 --rotate normal --output HDMI-1 --off --output DP-1 --mode 3440x1440 --rate 120 --pos 0x0 --rotate normal --output HDMI-2 --off
+autorandr -c
+# xrandr --output eDP-1 --primary --mode 1920x1080 --pos 760x1440 --rotate normal --output HDMI-1 --off --output DP-1 --mode 3440x1440 --rate 120 --pos 0x0 --rotate normal --output HDMI-2 --off
 
 hc detect_monitors
 
@@ -16,7 +17,7 @@ hc detect_monitors
 #     $HOME/.config/polybar/launch.sh
 # fi
 
-# compton
+# picom
 if ! pgrep picom; then
     picom -b
 fi
