@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if xset q | grep "Num Lock:    on"; then
+  dunstify "Numlock: ON" -u low
+
+  # brightnessctl -d asus::kbd_backlight get > /tmp/kbd_backlight
+  # rogauracore multi_static 000000 000000 000000 ff0000 >> /dev/null
+  # brightnessctl -d asus::kbd_backlight set 3 >> /dev/null
+else
+  dunstify "Numlock: OFF" -u low
+  # brightnessctl -d asus::kbd_backlight set 3 >> /dev/null
+  # rogauracore green >>/dev/null
+fi

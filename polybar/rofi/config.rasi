@@ -1,5 +1,5 @@
 configuration {
-	font:							"Fira Code Retina 9";
+	font:							"Iosevka Term Curly 10";
     show-icons:                     true;
 	icon-theme: 					"WhiteSur-dark";
     display-drun: 					"🚀";

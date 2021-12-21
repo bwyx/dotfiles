@@ -6,7 +6,8 @@ hc() {
 }
 
 # monitor bs
-xrandr --output eDP-1 --primary --mode 1920x1080 --pos 760x1440 --rotate normal --output HDMI-1 --off --output DP-1 --mode 3440x1440 --rate 120 --pos 0x0 --rotate normal --output HDMI-2 --off
+autorandr -c
+# xrandr --output eDP-1 --primary --mode 1920x1080 --pos 760x1440 --rotate normal --output HDMI-1 --off --output DP-1 --mode 3440x1440 --rate 120 --pos 0x0 --rotate normal --output HDMI-2 --off
 
 hc detect_monitors
 
@@ -26,10 +27,14 @@ if [[ -f ~/.config/polybar/launch ]]; then
     ~/.config/polybar/launch
 fi
 
+if ! pgrep plank; then
+    XDG_SESSION_TYPE=x11 plank &
+fi
+
 hc emit_hook reload
 
-xsetroot -solid '#0f0f0f'
-feh --bg-fill ~/Wall/Rainbow\ 5K\ P3.jpg
+xsetroot -solid '#2e3440'
+~/.fehbg
 
 # rules
 hc unrule -F
@@ -43,7 +48,8 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' floating=on
 hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 
-hc set tree_style '╾│ ├└╼─┐'
+# hc set tree_style '╾│ ├└╼─┐'
+hc set tree_style '╾│ ├╰╼─╮'
 
 # unlock, just to be sure
 hc unlock

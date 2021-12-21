@@ -155,7 +155,6 @@ class PlayerManager:
             self.print(args[0], args[1])
         self.print_queue.clear()
 
-
 class Player:
     def __init__(self, session_bus, bus_name, owner = None, connect = True, _print = None):
         self._session_bus = session_bus
@@ -266,7 +265,14 @@ class Player:
             ICON_PAUSED if self.status == 'playing' else
             ICON_PLAYING
         )
-
+        player_name=self.bus_name.split('.')[3]
+        self.icon_player = (
+            '%{F#1ed35f}' if player_name == 'spotify' else
+            # '%{F#1ec2d3}' if player_name == 'edge' else
+            # '%{F#e5b629}' if player_name == 'chromium' else
+            '%{F#ff0000}'
+        )
+        
     def _print(self, status):
         self.__print(status, self)
 
@@ -281,6 +287,11 @@ class Player:
             _disc       = _getProperty(self._metadata, 'xesam:discNumber', '')
             _length     = _getProperty(self._metadata, 'xesam:length', 0) or _getProperty(self._metadata, 'mpris:length', 0)
             _length_int = _length if type(_length) is int else int(float(_length))
+            _fmt_length = ( # Formats using h:mm:ss if length > 1 hour, else m:ss
+                f'{_length_int/1e6//60:.0f}:{_length_int/1e6%60:02.0f}'
+                if _length_int < 3600*1e6 else
+                f'{_length_int/1e6//3600:.0f}:{_length_int/1e6%3600//60:02.0f}:{_length_int/1e6%60:02.0f}'
+            )
             _date       = _getProperty(self._metadata, 'xesam:contentCreated', '')
             _year       = _date[0:4] if len(_date) else ''
             _url        = _getProperty(self._metadata, 'xesam:url', '')
@@ -298,6 +309,7 @@ class Player:
             self.metadata['url']        = _url
             self.metadata['filename']   = os.path.basename(_url)
             self.metadata['length']     = _length_int
+            self.metadata['fmt-length'] = _fmt_length
             self.metadata['cover']      = re.sub(SAFE_TAG_REGEX, """\1\1""", _metadataGetFirstItem(_cover))
             self.metadata['duration']   = _duration
 
@@ -401,7 +413,7 @@ class Player:
 
     def printStatus(self):
         if self.status in [ 'playing', 'paused' ]:
-            metadata = { **self.metadata, 'icon': self.icon, 'icon-reversed': self.icon_reversed }
+            metadata = { **self.metadata, 'icon': self.icon, 'icon-reversed': self.icon_reversed , 'icon-player': self.icon_player}
             if NEEDS_POSITION:
                 metadata['position'] = time.strftime("%M:%S", time.gmtime(self._getPosition()))
             # replace metadata tags in text
@@ -545,4 +557,5 @@ else:
     elif args.command == 'metadata' and current_player:
         print(_dbusValueToPython(current_player._metadata))
     elif args.command == 'raise' and current_player:
+        print(current_player.bus_name.split('.')[3])
         current_player.raisePlayer()
