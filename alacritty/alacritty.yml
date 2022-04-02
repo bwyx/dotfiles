@@ -18,6 +18,7 @@ window:
   #
   # Specified in number of columns/lines, not pixels. If both are zero this
   # setting is ignored.
+  opacity: 0.9
   dimensions:
     columns: 80
     lines: 24
@@ -121,114 +122,29 @@ custom_cursor_colors: true
 
 # Colors
 colors:
-  # Nord (https://github.com/arcticicestudio/nord-alacritty/blob/develop/src/nord.yml)
   primary:
-    background: '#2e3440'
-    foreground: '#d8dee9'
-    dim_foreground: '#a5abb6'
-  cursor:
-    text: '#2e3440'
-    cursor: '#d8dee9'
-  vi_mode_cursor:
-    text: '#2e3440'
-    cursor: '#d8dee9'
-  selection:
-    text: CellForeground
-    background: '#4c566a'
-  search:
-    matches:
-      foreground: CellBackground
-      background: '#88c0d0'
-    bar:
-      background: '#434c5e'
-      foreground: '#d8dee9'
+    background: '0x282828'
+    foreground: '0xdfbf8e'
+
   normal:
-    black: '#3b4252'
-    red: '#bf616a'
-    green: '#a3be8c'
-    yellow: '#ebcb8b'
-    blue: '#81a1c1'
-    magenta: '#b48ead'
-    cyan: '#88c0d0'
-    white: '#e5e9f0'
+    black:   '0x665c54'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe78a4e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
+
   bright:
-    black: '#4c566a'
-    red: '#bf616a'
-    green: '#a3be8c'
-    yellow: '#ebcb8b'
-    blue: '#81a1c1'
-    magenta: '#b48ead'
-    cyan: '#8fbcbb'
-    white: '#eceff4'
-  dim:
-    black: '#373e4d'
-    red: '#94545d'
-    green: '#809575'
-    yellow: '#b29e75'
-    blue: '#68809a'
-    magenta: '#8c738c'
-    cyan: '#6d96a5'
-    white: '#aeb3bb'
-
-  # # Tomorrow (https://github.com/aarowill/base16-alacritty/blob/master/colors/base16-tomorrow.yml)
-  # # Default colors
-  # primary:
-  #   background: '0xffffff'
-  #   foreground: '0x4d4d4c'
-  # # Colors the cursor will use if `custom_cursor_colors` is true
-  # cursor:
-  #   text: '0xffffff'
-  #   cursor: '0x4d4d4c'
-  # # Normal colors
-  # normal:
-  #   black:   '0xffffff'
-  #   red:     '0xc82829'
-  #   green:   '0x718c00'
-  #   yellow:  '0xeab700'
-  #   blue:    '0x4271ae'
-  #   magenta: '0x8959a8'
-  #   cyan:    '0x3e999f'
-  #   white:   '0x4d4d4c'
-  # # Bright colors
-  # bright:
-  #   black:   '0x8e908c'
-  #   red:     '0xf5871f'
-  #   green:   '0xe0e0e0'
-  #   yellow:  '0xd6d6d6'
-  #   blue:    '0x969896'
-  #   magenta: '0x282a2e'
-  #   cyan:    '0xa3685a'
-  #   white:   '0x1d1f21'
-
-  # # Tomorrow Night (https://github.com/aarowill/base16-alacritty/blob/master/colors/base16-tomorrow-night.yml)
-  # # Default colors
-  # primary:
-  #   background: '0x1d1f21'
-  #   foreground: '0xc5c8c6'
-  # # Colors the cursor will use if `custom_cursor_colors` is true
-  # cursor:
-  #   text: '0x1d1f21'
-  #   cursor: '0xc5c8c6'
-  # # Normal colors
-  # normal:
-  #   black:   '0x1d1f21'
-  #   red:     '0xcc6666'
-  #   green:   '0xb5bd68'
-  #   yellow:  '0xf0c674'
-  #   blue:    '0x81a2be'
-  #   magenta: '0xb294bb'
-  #   cyan:    '0x8abeb7'
-  #   white:   '0xc5c8c6'
-  # # Bright colors
-  # bright:
-  #   black:   '0x969896'
-  #   red:     '0xde935f'
-  #   green:   '0x282a2e'
-  #   yellow:  '0x373b41'
-  #   blue:    '0xb4b7b4'
-  #   magenta: '0xe0e0e0'
-  #   cyan:    '0xa3685a'
-  #   white:   '0xffffff'
+    black:   '0x928374'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe3a84e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
 
   # Indexed Colors
   #
@@ -266,9 +182,6 @@ bell:
   animation: EaseOutExpo
   color: '0xffffff'
   duration: 0
-
-# Background opacity
-background_opacity: 0.8
 
 # Key bindings
 #
