@@ -1,0 +1,476 @@
+Script started on 2022-02-10 19:31:29+07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="104" LINES="12"]
+[?25l[?7l[1m[33m                .:'[0m  [1m[36m🐧[0m arch
+[1m[31m            _.[33m::'  [0m  [1m[36m🐛[0m 5.16.7-arch1-1
+[1m[36m  .-[32m;;[36m-.   [31m(_.'    [0m  [1m[36m🐼[0m 1 day, 8 hours, 16 mins
+[1m[36m / [32m;;;' [36m\          [0m  
+[1m[36m|[32m.  `:   [36m|         [0m  [1m[36m🌵[0m zsh
+[1m[36m \[32m:   [32m`;[36m/          [0m  [1m[36m📦[0m 1031
+[1m[36m  '-..-[32m'           [0m  [1m[36m🍄[0m 5811Mb (36%)
+[?7h[?25h[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway]1;~/.config/sway[0m[27m[24m[J
+[1m[0m[1m[36m~/.config/sway[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[4ms[24m[4ms[24m[90mcript[39m[4ms[39m[4mc[24m[4ms[4mc[39m[4mr[24m[4mr[39m[4mi[24m[4mi[39m[4mp[24m[24m[32ms[24m[32mc[24m[32mr[24m[32mi[24m[32mp[32mt[39m[39ms[39mc[39mr[39mi[39mp[39mt
+[J[0mscript        [Jscriptlive    [Jscriptreplay  [J[01;34mscripts[0m/    [J[A[0m[27m[24m[0m[39m[3Cscript[K[0m[39m[1m[31ms[1m[31mc[1m[31mr[1m[31mi[1m[31mp[1m[31mt[1m[31m/[0m[39m
+[J[A[10C[0m[4m[32ms[0m[4m[32mc[0m[4m[32mr[0m[4m[32mi[0m[4m[32mp[0m[4m[32mt[0m[4m[32ms[4m[32m/[24m[39m[?1l>[?2004l
+[J]2;scripts/]1;scripts/[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32ml[39m[32ml[39m[90mxappearance[39m[11D[32ml[32ms[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[?1l>[?2004l
+]2;ls --color=tty]1;lskbstate  [0m[01;32mmedia[0m  [01;32mwaybar[0m
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[1m[31mc[0m[39m[1m[31mc[0m[39m[90mat /sys/class/leds/input19::numlock/brightness[39m[46D[1m[31mc[1m[31mh[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [45D[90mromium --app=[39m[13D[1m[31mc[1m[31mh[1m[31mm[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90mod -x ../configure.ac[39m[21D[1m[31mm[1m[31mo[0m[39m[0m[32mc[0m[32mh[0m[32mm[0m[32mo[32md[39m[39m [39m+[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[90mx ../configure.ac[39m[17D[39mx[39m [39m[4m.[24m[4m.[39m[4m/[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[90mflash_tool.sh[39m[13D[4m/[39m[4mk[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[4mk[4mb[24m[4mb[4mstate[24m[1m [0m[0m [?1l>[?2004l
+]2;chmod +x ./kbstate]1;chmod[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32mchmod[39m +x [4m./kbstate[24m[18D[39m [39m [39m [39m [39m     [24m [24m [24m [24m [24m [24m [24m [24m [24m [18D[32m.[39m[32m.[39m[90m/numlock[39m[8D[4m[32m.[4m[32m/[24m[39m[39m[4m.[39m[4m/[39m[4mk[24m[39m [39m [39m [39m [39m [39m [4mk[4mb[24m[24m[32m.[24m[32m/[24m[32mk[24m[32mb[32mstate[39m[1m [0m[0m [?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstatehello[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstatehello
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[1m[31mc[0m[39m[1m[31mc[0m[39m[90mhmod +x ./kbstate[39m[17D[1m[31mc[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[90mt /sys/class/leds/input19::numlock/brightness[39m[45D[0m[32mc[0m[32ma[32mt[39m[39m [1m[31m$[0m[39m[39m [39m  [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [46D[1m[30m$[1m[30mB[0m[39m[1m[30m$[1m[30mB[1m[30mL[0m[39m[1m[30mL[1m[30mO[0m[39m[1m[30mO[1m[30mC[0m[39m[1m[30mC[1m[30mK[0m[39m[1m[30mK[1m[30m_[0m[39m[1m[30m_[1m[30mI[0m[39m[1m[30mI[1m[30mN[0m[39m[1m[30mN[1m[30mS[0m[39m[1m[30mS[1m[30mT[0m[39m[1m[30mT[1m[30mA[0m[39m[1m[30mA[1m[30mN[0m[39m[1m[30mN[1m[30mC[0m[39m[1m[30mC[1m[30mE[0m[39m[15D[0m[39mc[0m[39ma[0m[39mt[0m[39m [0m[39m[7m$[0m[39m[7mB[0m[39m[7mL[0m[39m[7mO[0m[39m[7mC[0m[39m[7mK[0m[39m[7m_[0m[39m[7mI[0m[39m[7mN[0m[39m[7mS[0m[39m[7mT[7mANCE[27m[19D[32mc[32ma[32mt[39m [27m$[27mB[27mL[27mO[27mC[27mK[27m_[27mI[27mN[27mS[27mT[27mA[27mN[27mC[27mE[90m/sys/class/leds/input19::numlock/brightness[39m[43D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [43D[?1l>[?2004l
+]2;cat $BLOCK_INSTANCE]1;cat^C
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m[1m🍕 done [0m[1m[33m2s[0m[33m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[1m[31me[0m[39m[1m[31me[0m[39m[90mcho $(./numlock)[39m[16D[1m[31me[1m[31mc[0m[39m[1m[31me[1m[31mc[1m[31mh[0m[39m[0m[32me[0m[32mc[0m[32mh[32mo[39m[39m [1m[31m$[0m[39m[39m [39m [39m  [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[1m[30m$[1m[30mB[0m[39m[1m[30m$[1m[30mB[1m[30mL[0m[39m[1m[30mL[1m[30mO[0m[39m[1m[30mO[1m[30mC[0m[39m[1m[30mC[1m[30mK[0m[39m[1m[30mK[1m[30m_[0m[39m[1m[30m_[1m[30mI[0m[39m[1m[30mI[1m[30mN[0m[39m[1m[30mN[1m[30mS[0m[39m[1m[30mS[1m[30mT[0m[39m[1m[30mT[1m[30mA[0m[39m[1m[30mA[1m[30mN[0m[39m[1m[30mN[1m[30mC[0m[39m[1m[30mC[1m[30mE[0m[39m[15D[0m[39me[0m[39mc[0m[39mh[0m[39mo[0m[39m [0m[39m[7m$[0m[39m[7mB[0m[39m[7mL[0m[39m[7mO[0m[39m[7mC[0m[39m[7mK[0m[39m[7m_[0m[39m[7mI[0m[39m[7mN[0m[39m[7mS[7mTANCE[27m[20D[32me[32mc[32mh[32mo[39m [27m$[27mB[27mL[27mO[27mC[27mK[27m_[27mI[27mN[27mS[27mT[27mA[27mN[27mC[27mE[90m$(./numlock)[39m[12D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[?1l>[?2004l
+]2;echo $BLOCK_INSTANCE]1;echo
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[1m[31m$[0m[39m[1m[31m$[0m[39m[90mshell[39m[1m[31m$[1m[31m([0m[39m[39m [39m [39m [39m [90mecho /tmp/kbd_backlight)[39m[24D[1m[31m$[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [25D[1m[30m$[1m[30mB[0m[39m[1m[30m$[1m[30mB[1m[30mL[0m[39m[1m[30mL[1m[30mO[0m[39m[1m[30mO[1m[30mC[0m[39m[1m[30mC[1m[30mK[0m[39m[1m[30mK[1m[30m_[0m[39m[1m[30m_[1m[30mI[0m[39m[1m[30mI[1m[30mN[0m[39m[1m[30mN[1m[30mS[0m[39m[1m[30mS[1m[30mT[0m[39m[1m[30mT[1m[30mA[0m[39m[1m[30mA[1m[30mN[0m[39m[1m[30mN[1m[30mC[0m[39m[1m[30mC[1m[30mE[0m[39m[15D[1m[30m$[1m[30m([1m[30m$[1m[30mB[1m[30mL[1m[30mO[1m[30mC[1m[30mK[1m[30m_[1m[30mI[1m[30mN[1m[30mS[1m[30mT[1m[30mA[1m[30mN[1m[30mCE[0m[27m[39m[17D[1m[31m$[1m[31m([1m[31m$[1m[31mB[1m[31mL[1m[31mO[1m[31mC[1m[31mK[1m[31m_[1m[31mI[1m[31mN[1m[31mS[1m[31mT[1m[31mA[1m[31mN[1m[31mC[1m[31mE[0m[39m[90mecho /tmp/kbd_backlight)[39m[24D[1m[31mE[1m[31m)[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [23D[?1l>[?2004l
+]2;$($BLOCK_INSTANCE)]1;$($BLOCK_INSTANCE)[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[1m[31m$($BLOCK_INSTANCE)[0m[39m[18D[0m[32me[0m[32mc[0m[32mh[0m[32mo[39m[0m[39m [0m[39m$[0m[39mB[0m[39mL[0m[39mO[0m[39mC[0m[39mK[0m[39m_[0m[39mI[0m[39mN[0m[39mS[0m[39mT[0m[39mA[0m[39mNCE[20D[32mc[32ma[32mt[39m[P[16C [19D[32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m          [10D[39m[7m^[39m[7m[[27m[39m.[39m/[39mk[39mb[39ms[39mt[39mate[9D[./kbstate[9D2./kbstate[9D0./kbstate[9D0./kbstate[9D~./kbstate[9DB./kbstate[9DL./kbstate[9DO./kbstate[9DC./kbstate[9DK./kbstate[9D_./kbstate[9DI./kbstate[9DN./kbstate[9DS./kbstate[9DT./kbstate[9DA./kbstate[9DN./kbstate[9DC./kbstate[9DE./kbstate[9D[21D[1m[7m[31m^[1m[7m[31m[[0m[27m[39m[1m[31m[[1m[31m2[1m[31m0[1m[31m0[1m[31m~[1m[31mB[1m[31mL[1m[31mO[1m[31mC[1m[31mK[1m[31m_[1m[31mI[1m[31mN[1m[31mS[1m[31mT[1m[31mA[1m[31mN[1m[31mC[1m[31mE[1m[31m~[1m[31m.[1m[31m/[1m[31mk[1m[31mb[1m[31ms[1m[31mt[1m[31ma[1m[31mt[1m[31me[0m[39m[9D[P[9C [10D[1m[31mE[0m[39m[0m[39m [0m[39m[4m.[0m[39m[4m/[0m[39m[4mk[0m[39m[4mb[0m[39m[4ms[0m[39m[4mt[0m[39m[4ma[0m[39m[4mt[4me[24m[9D[9D[P[24C [25D[P[24C [25D[P[24C [25D[P[24C [25D[P[24C [25D[P[P[24C  [26D[6C[11C[14D[0m[39mB[0m[39mL[0m[39mO[0m[39mC[0m[39mK[0m[39m_[0m[39mI[0m[39mN[0m[39mS[0m[39mT[0m[39mA[0m[39mN[0m[39mC[0m[39mE=[24m [24m[32m.[24m[32m/[24m[32mk[24m[32mb[24m[32ms[24m[32mt[24m[32ma[24m[32mt[32me[39m[10Dc[39m [32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m[10Da[39m [32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m[10Dp[39m [32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m[10Ds[39m [32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m[10D[?1l>[?2004l
+]2;BLOCK_INSTANCE=caps ./kbstate]1;./kbstate./kbstate: line 13: [: 0
+0: integer expression expected
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004hBLOCK_INSTANCE=caps [32m./kbstate[39m[1C[P[13C [14D[P[12C [13D[P[11C [12D[P[10C [11Dn[39m [32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m[10Du[39m [32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m[10Dm[39m [32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m[10D[?1l>[?2004l
+]2;BLOCK_INSTANCE=num ./kbstate]1;./kbstate./kbstate: line 17: [: 1
+1: integer expression expected
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004hBLOCK_INSTANCE=num [32m./kbstate[39m[?1l>[?2004l
+]2;BLOCK_INSTANCE=num ./kbstate]1;./kbstate./kbstate: line 17: [: too many arguments
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004hBLOCK_INSTANCE=num [32m./kbstate[39m[13Dcaps[39m [32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m[29D[1m[31m$[1m[31m([1m[31m$[1m[31mB[1m[31mL[1m[31mO[1m[31mC[1m[31mK[1m[31m_[1m[31mI[1m[31mN[1m[31mS[1m[31mT[1m[31mA[1m[31mN[1m[31mC[1m[31mE[1m[31m)[0m[39m  [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[18D[0m[32me[0m[32mc[0m[32mh[0m[32mo[39m[0m[39m [0m[39m$[0m[39mB[0m[39mL[0m[39mO[0m[39mC[0m[39mK[0m[39m_[0m[39mI[0m[39mN[0m[39mS[0m[39mT[0m[39mA[0m[39mNCE[20D[32mc[32ma[32mt[39m[P[16C [19D[32m.[32m/[32mk[32mb[32ms[32mt[32ma[32mt[32me[39m          [10D[?1l>[?2004l
+]2;./kbstate]1;./kbstate1
+1[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate1
+1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate1
+1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate1
+1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate1
+1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[9D[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[32m./kbstate[39m[9D[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate0
+0
+./kbstate: line 6: [: too many arguments
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate1
+1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate./kbstate: line 5: print: command not found
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+1[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+./kbstate: line 8: [: 0
+0: integer expression expected
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+./kbstate: line 8: [[: 0
+0: syntax error in expression (error token is "0")
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+./kbstate: line 8: [: 0
+0: integer expression expected
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+./kbstate: line 8: [: 0
+0: integer expression expected
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+./kbstate: line 8: read: `0
+0': not a valid identifier
+./kbstate: line 8: [: =: unary operator expected
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: ==> /sys/class/leds/input19::numlock/brightness <==
+0
+
+==> /sys/class/leds/input209::numlock/brightness <==
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstate./kbstate: line 5: read: `/sys/class/leds/input19::numlock/brightness': not a valid identifier
+NumLock: 
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: ==> /sys/class/leds/input19::numlock/brightness <==
+0
+
+==> /sys/class/leds/input209::numlock/brightness <==
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[9D[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 1
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[31m🌵 [0m[31m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m./kbstate[39m[?1l>[?2004l
+]2;./kbstate]1;./kbstateNumLock: 0
+[1m[7m%[27m[1m[0m                                                                                                        ]2;bayu@arxh:~/.config/sway/scripts]1;../sway/scripts[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m[K[?1h=[?2004h[32m4[39m[1m[31m4[1m[31m4[0m[39m[1m[31m4[1m[31m4[1m[31m4[0m[39m[1m[31m7[1m[31m4[1m[31m4[1m[31m4[0m[39m[1m[31m7[1m[31m7[1m[31m4[1m[31m4[1m[31m4[0m[39m[1m[31m7[1m[31m4[1m[31m4[1m[31m4[0m[39m[1m[31m4[1m[31m4[1m[31m4[0m[39m[0m[39m [1m[31m7[1m[31m4[1m[31m4[1m[31m4[0m[39m[0m[39m [1m[31m4[1m[31m4[1m[31m4[0m[39m[0m[39m [1m[31m4[1m[31m4[0m[39m[0m[39m [0m[32m4[39m[0m[39m [39m [4m[32m/[24m[39m[4m[32m/[24m[39m[90mrun/media/bayu/f0f4ae0c-2ae8-48b2-ab03-caeeb3042262/etc/systemd/network/[39m[72D[39m[4m/[39m[4ms[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [71D[90mys/class/power_supply/BAT1/[39m[27D[4m/[4ms[39m[4my[24m[4m[32m/[4m[32ms[4m[32my[4m[32ms[24m[39m[4m[32ms[1m[4m[32m/[0m[24m[39m[39m[4m/[39m[4ms[39m[4my[39m[4ms[0m[39m[4m/[39m[4mc[24m[4mc[39m[4ml[24m[4ml[39m[4ma[24m[8D[4m[32m/[4m[32ms[4m[32my[4m[32ms[4m[32m/[4m[32mc[4m[32ml[4m[32ma[4m[32ms[4m[32ms[1m[4m[32m/[0m[24m[39m[11D[39m[4m/[39m[4ms[39m[4my[39m[4ms[39m[4m/[39m[4mc[39m[4ml[39m[4ma[39m[4ms[39m[4ms[0m[39m[4m/[39m[4ml[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[4ml[4me[24m[4me[4md[24m[14D[4m[32m/[4m[32ms[4m[32my[4m[32ms[4m[32m/[4m[32mc[4m[32ml[4m[32ma[4m[32ms[4m[32ms[4m[32m/[4m[32ml[4m[32me[4m[32md[4m[32ms[1m[4m[32m/[0m[24m[39m[16D[39m[4m/[39m[4ms[39m[4my[39m[4ms[39m[4m/[39m[4mc[39m[4ml[39m[4ma[39m[4ms[39m[4ms[39m[4m/[39m[4ml[39m[4me[39m[4md[39m[4ms[0m[39m[4m/[4mi[24m[4mi[4mn[24m[4mn[4mp[24m[4mp[4mu[24m[4mu[4mt[24m[21D[24m/[24ms[24my[24ms[24m/[24mc[24ml[24ma[24ms[24ms[24m/[24ml[24me[24md[24ms[24m/[24mi[24mn[24mp[24mu[24mt
+[01;36minput19::capslock[0m@     [01;36minput19::scrolllock[0m@   [01;36minput236::compose[0m@     [01;36minput236::numlock[0m@   
+[J[01;36minput19::numlock[0m@      [J[01;36minput236::capslock[0m@    [J[01;36minput236::kana[0m@        [J[01;36minput236::scrolllock[0m@[J[A[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[J[01;36minput19::capslock[0m@     [J[01;36minput19::numlock[0m@      [J[01;36minput19::scrolllock[0m@   [J[01;36minput236::capslock[0m@    [J[01;36minput236::compose[0m@     [J[01;36minput236::kana[0m@        [J[01;36minput236::numlock[0m@     [J[01;36minput236::scrolllock[0m@[J[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[01;36minput19::capslock[0m@     [01;36minput19::scrolllock[0m@   [01;36minput236::compose[0m@     [01;36minput236::numlock[0m@   
+[J[01;36minput19::numlock[0m@      [J[01;36minput236::capslock[0m@    [J[01;36minput236::kana[0m@        [J[01;36minput236::scrolllock[0m@[J[A[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[J[01;36minput19::capslock[0m@     [J[01;36minput19::numlock[0m@      [J[01;36minput19::scrolllock[0m@   [J[01;36minput236::capslock[0m@    [J[01;36minput236::compose[0m@     [J[01;36minput236::kana[0m@        [J[01;36minput236::numlock[0m@     [J[01;36minput236::scrolllock[0m@[J[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[01;36minput19::capslock[0m@     [01;36minput19::scrolllock[0m@   [01;36minput236::compose[0m@     [01;36minput236::numlock[0m@   
+[J[01;36minput19::numlock[0m@      [J[01;36minput236::capslock[0m@    [J[01;36minput236::kana[0m@        [J[01;36minput236::scrolllock[0m@[J[A[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[J[01;36minput19::capslock[0m@     [J[01;36minput19::numlock[0m@      [J[01;36minput19::scrolllock[0m@   [J[01;36minput236::capslock[0m@    [J[01;36minput236::compose[0m@     [J[01;36minput236::kana[0m@        [J[01;36minput236::numlock[0m@     [J[01;36minput236::scrolllock[0m@[J[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[01;36minput19::capslock[0m@     [01;36minput19::scrolllock[0m@   [01;36minput236::compose[0m@     [01;36minput236::numlock[0m@   
+[J[01;36minput19::numlock[0m@      [J[01;36minput236::capslock[0m@    [J[01;36minput236::kana[0m@        [J[01;36minput236::scrolllock[0m@[J[A[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[J[01;36minput19::capslock[0m@     [J[01;36minput19::numlock[0m@      [J[01;36minput19::scrolllock[0m@   [J[01;36minput236::capslock[0m@    [J[01;36minput236::compose[0m@     [J[01;36minput236::kana[0m@        [J[01;36minput236::numlock[0m@     [J[01;36minput236::scrolllock[0m@[J[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[01;36minput19::capslock[0m@     [01;36minput19::scrolllock[0m@   [01;36minput236::compose[0m@     [01;36minput236::numlock[0m@   
+[J[01;36minput19::numlock[0m@      [J[01;36minput236::capslock[0m@    [J[01;36minput236::kana[0m@        [J[01;36minput236::scrolllock[0m@[J[A[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[J[01;36minput19::capslock[0m@     [J[01;36minput19::numlock[0m@      [J[01;36minput19::scrolllock[0m@   [J[01;36minput236::capslock[0m@    [J[01;36minput236::compose[0m@     [J[01;36minput236::kana[0m@        [J[01;36minput236::numlock[0m@     [J[01;36minput236::scrolllock[0m@[J[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[01;36minput19::capslock[0m@     [01;36minput19::scrolllock[0m@   [01;36minput236::compose[0m@     [01;36minput236::numlock[0m@   
+[J[01;36minput19::numlock[0m@      [J[01;36minput236::capslock[0m@    [J[01;36minput236::kana[0m@        [J[01;36minput236::scrolllock[0m@[J[A[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[32m[39m[1m[0m/sys/class/leds/input
+[J[01;36minput19::capslock[0m@     [J[01;36minput19::numlock[0m@      [J[01;36minput19::scrolllock[0m@   [J[01;36minput236::capslock[0m@    [J[01;36minput236::compose[0m@     [J[01;36minput236::kana[0m@        [J[01;36minput236::numlock[0m@     [J[01;36minput236::scrolllock[0m@[J[A[0m[27m[24m[0m[39m[3C/sys/class/leds/input[K[0m[39m[A[A[0m[27m[24m[J
+[1m[0m[1m[36m📌 .config/sway/scripts[0m[36m[39m[1m [0m
+[1m[0m[1m[32m🌵 [0m[

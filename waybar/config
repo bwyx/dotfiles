@@ -1,0 +1,144 @@
+[
+  {
+    "output": "eDP-1",
+    "name": "main",
+    // "layer": "top",
+    "width": 400,
+    "margin-left": 0,
+    "margin-right": 0,
+    "modules-left": ["sway/workspaces", "sway/window"],
+    "modules-center": ["custom/media", "sway/mode"],
+    "modules-right": [
+      "tray",
+      "cpu",
+      "memory",
+      "network",
+      "battery",
+      "pulseaudio",
+      "clock"
+    ],
+    "sway/window": {
+      "max-length": 35,
+      "all-outputs": true
+    },
+    "sway/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": false,
+      "format": "{icon}",
+      // "persistent_workspaces": {
+      //   "3": [], // Always show a workspace with name '3', on all outputs if it does not exists
+      //   "4": ["eDP-1"] // Always show a workspace with name '4', on output 'eDP-1' if it does not exists
+      //   "5": ["eDP-1", "DP-2"] // Always show a workspace with name '5', on outputs 'eDP-1' and 'DP-2' if it does not exists
+      // },
+      "format-icons": {
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "8": "八",
+        "9": "九",
+        "10": "十",
+        // state
+        "urgent": "",
+        // "focused": "",
+        "default": ""
+      }
+    },
+    "cpu": {
+      "interval": 10,
+      "format": " {usage}%",
+      "max-length": 10
+    },
+    "memory": {
+      "interval": 30,
+      // "format": "{}% ",
+      "format": " {used:0.1f}G",
+      "tooltip-format": "{used:0.1f}G/{total:0.1f}G ({}%)"
+      // "max-length": 10
+    },
+    "network": {
+      "interface": "wlp4s0",
+      "format": "Connecting..",
+      "format-wifi": " {essid}",
+      "format-ethernet": " {ipaddr}/{cidr}",
+      "format-disconnected": "Offline", //An empty format will hide the module.
+      "tooltip-format": " {ifname} via {gwaddr}",
+      "tooltip-format-wifi": "{ipaddr}/{cidr} - {signalStrength}%",
+      "tooltip-format-ethernet": " {ifname}",
+      "tooltip-format-disconnected": "Disconnected",
+      "max-length": 20
+    },
+    "battery": {
+      "format": "<span size='12.5pt'>{icon}</span> <span baseline_shift='2pt'>{capacity}%</span>",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+      "format-alt": "{:%a, %d %b %H:%M}",
+      "tooltip-format": "{:%a, %d %b}"
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{icon}<sup></sup> {volume}%",
+      "format-muted": "",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", "", ""]
+      },
+      "scroll-step": 1,
+      "on-click": "amixer -D pulse sset Master toggle",
+      "on-click-right": "pavucontrol"
+    },
+    "custom/media": {
+      // "format": "{icon} {}",
+      "format": "<i>{icon} {}</i>",
+      "escape": true,
+      // "return-type": "json",
+      "max-length": 40,
+      "on-click": "~/.config/waybar/scripts/media.py play-pause &",
+      "on-click-right": "~/.config/waybar/scripts/media.py stop &",
+      "smooth-scrolling-threshold": 6, // This value was tested using a trackpad, it should be lowered if using a mouse.
+      "on-scroll-up": "~/.config/waybar/scripts/media.py next &",
+      "on-scroll-down": "~/.config/waybar/scripts/media.py previous &",
+      "exec": "~/.config/waybar/scripts/media.py 2> /dev/null" // Script in resources/custom_modules folder
+    }
+  },
+  {
+    "output": "!eDP-1",
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    // "modules-center": ["sway/window"],
+    // "height": 40,
+    "sway/window": {
+      "max-length": 50
+    },
+    "sway/workspaces": {
+      // "persistent_workspaces": {
+      //   "3": [], // Always show a workspace with name '3', on all outputs if it does not exists
+      //   "4": ["eDP-1"], // Always show a workspace with name '4', on output 'eDP-1' if it does not exists
+      //   "5": ["eDP-1", "DP-2"] // Always show a workspace with name '5', on outputs 'eDP-1' and 'DP-2' if it does not exists
+      // },
+      "disable-scroll": true,
+      "all-outputs": false,
+      "format": "{icon}",
+      "format-icons": {
+        "e1": "五",
+        "e2": "六",
+        "e3": "七",
+        "e4": "八",
+
+        // state
+        "urgent": "",
+        // "focused": "",
+        "default": ""
+      }
+    }
+  }
+]

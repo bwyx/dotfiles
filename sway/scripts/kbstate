@@ -1,0 +1,14 @@
+#!/bin/sh
+
+kbinput=19
+
+state=$(cat /sys/class/leds/input${kbinput}*numlock/brightness)
+
+printf "NumLock: $state\n"
+if [ "$state" = "1" ]; then
+  # rogauracore multi_static 000000 000000 000000 ff0000 &
+  dunstify -h string:x-dunst-stack-tag:numlock "NumLock: ON" -u low >/dev/null
+else
+  # rogauracore single_static 44ff00
+  dunstify -h string:x-dunst-stack-tag:numlock "NumLock: OFF" -u low >/dev/null
+fi

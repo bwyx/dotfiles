@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if ! pgrep waybar; then
+  waybar $1
+fi
