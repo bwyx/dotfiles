@@ -3,6 +3,7 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -12,34 +13,23 @@ set $left h
 set $down j
 set $up k
 set $right l
+
+set $explorer thunar
+set $code code
 # Your preferred terminal emulator
 set $term alacritty
-# Your preferred explorer
-set $explorer thunar
-# Your preferred code editor
-set $code code # VS Code
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-# set $menu ~/.config/polybar/scripts/launcher.sh
-# set $menu bemenu-run
+#set $menu dmenu_path | dmenu | xargs swaymsg exec --
+
+# Disable Super Key binding on chromium --app "url"
+for_window [app_id="^chrome-.*"] shortcuts_inhibitor disable
 for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 20 ppt 40 ppt
 set $menu exec $term --class=launcher -e sway-launcher-desktop
 
-### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
-
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec wl-paste -t text --watch clipman store --no-persist
 
-include ~/.config/sway/config.d/*
+include ./config.d/*
 include /etc/sway/config.d/*

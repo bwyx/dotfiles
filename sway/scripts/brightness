@@ -1,0 +1,13 @@
+case $1 in
+    increase)
+        emoji="🔆"
+        brightnessctl set +2%;;
+    decrease)
+        emoji="🔅"
+        brightnessctl set 2%-;;
+esac
+
+MAX=${MAX:-$(brightnessctl m)}
+VAL=$(brightnessctl g)
+
+dunstify -a "brightness" -t 1500 -h string:x-dunst-stack-tag:brightness -h int:value:"$(($VAL * 100 / $MAX))" "Brightness $emoji"
