@@ -1,0 +1,37 @@
+#!/bin/bash
+
+IS_RECORDING=0
+
+begin_record() {
+    SECONDS=0
+    IS_RECORDING=1
+
+    while [ $IS_RECORDING == 1 ]; do
+        elapsed=$SECONDS
+        m=$(($elapsed / 60))
+        s=$(($elapsed % 60))
+        text=" [$(printf '%02d' $m):$(printf '%02d' $s)]"
+
+        echo "{\"text\": \"$text\", \"tooltip\": \"Stop Recording\"}"
+        sleep 1
+    done
+}
+
+end_record() {
+    IS_RECORDING=0
+
+    echo "{\"text\": \" [saved]\", \"tooltip\": \"Recording Saved\"}"
+    sleep 1
+    echo
+}
+
+exec sleep infinity &
+
+pid="$!"
+trap begin_record SIGUSR1
+trap end_record SIGUSR2
+trap "kill $pid" EXIT
+
+while :; do
+    wait "$pid"
+done

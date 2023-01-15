@@ -1,0 +1,28 @@
+#!/bin/bash
+getTargetDirectory() {
+  test -f "${XDG_CONFIG_HOME:-$HOME/.config}/user-dirs.dirs" && \
+    . "${XDG_CONFIG_HOME:-$HOME/.config}/user-dirs.dirs"
+
+  echo "${XDG_VIDEOS_DIR:-$HOME}"
+}
+
+if ! pkill -INT -P "$(pgrep -xo record)" wf-recorder 2>/dev/null; then
+    case $1 in
+        screen)
+            geometry="$(slurp -o)";;
+        window)
+            geometry="$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp)";;
+        *)
+            geometry="$(slurp)";;
+    esac
+
+    if [ -n "$geometry" ]; then
+        FILE=$(getTargetDirectory)/recording_$(date -Ins).mp4
+
+        pkill -USR1 -x recordd
+        dunstify -h string:x-dunst-stack-tag:record "🎥 Recording Started"
+        wf-recorder -f $FILE -g "$geometry"
+        pkill -USR2 -x recordd
+        dunstify -h string:x-dunst-stack-tag:record "💾 $FILE"
+    fi
+fi

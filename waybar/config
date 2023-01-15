@@ -3,12 +3,15 @@
     "output": "eDP-1",
     "name": "main",
     // "layer": "top",
-    "width": 400,
     "margin-left": 0,
     "margin-right": 0,
     "modules-left": ["sway/workspaces", "sway/window"],
-    "modules-center": ["custom/media", "sway/mode"],
+    "modules-center": ["mpris"],
+    // "modules-center": ["sway/mode"],
     "modules-right": [
+      "custom/timer",
+      "sway/mode",
+      "custom/wf-recorder",
       "tray",
       "cpu",
       "memory",
@@ -93,27 +96,37 @@
         "default": ["", "", "", ""]
       },
       "scroll-step": 1,
-      "on-click": "amixer -D pulse sset Master toggle",
+      "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
       "on-click-right": "pavucontrol"
     },
-    "custom/media": {
-      // "format": "{icon} {}",
-      "format": "<i>{icon} {}</i>",
-      "escape": true,
-      // "return-type": "json",
-      "max-length": 40,
-      "on-click": "~/.config/waybar/scripts/media.py play-pause &",
-      "on-click-right": "~/.config/waybar/scripts/media.py stop &",
-      "smooth-scrolling-threshold": 6, // This value was tested using a trackpad, it should be lowered if using a mouse.
-      "on-scroll-up": "~/.config/waybar/scripts/media.py next &",
-      "on-scroll-down": "~/.config/waybar/scripts/media.py previous &",
-      "exec": "~/.config/waybar/scripts/media.py 2> /dev/null" // Script in resources/custom_modules folder
+    "mpris": {
+      // "format": "{player} {player_icon}, {status} {status_icon}; {artist}; {album}; {title}; {length} <i>{dynamic}</i>",
+      "format": "{status_icon} <i>{artist} - {title}</i>  ",
+      // "format-paused": "{status_icon} <i>{dynamic}</i>",
+      "max-length": 10,
+      "player-icons": {
+        "default": "▶",
+        "chromium": "",
+        "spotify": "",
+        "mpv": "🎵"
+      },
+      "status-icons": {
+        "playing": "▶",
+        "paused": "⏸"
+      }
+      // "ignored-players": ["firefox"]
+    },
+    "custom/wf-recorder": {
+      "return-type": "json",
+      "exec": "exec ~/.config/waybar/scripts/recordd",
+      "exec-on-event": false,
+      "on-click": "~/.config/waybar/scripts/record"
     }
   },
   {
     "output": "!eDP-1",
     "layer": "top",
-    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-left": ["sway/workspaces"],
     // "modules-center": ["sway/window"],
     // "height": 40,
     "sway/window": {
